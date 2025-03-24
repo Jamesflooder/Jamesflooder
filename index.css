@@ -1,0 +1,197 @@
+button{
+    cursor: pointer;
+    color: rgb(167, 167, 167);
+    width: 100%;
+
+    padding: 0.3rem 2rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.tab button{
+    text-align:left;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    scrollbar-width:none;
+    font-family: "Roboto Slab", serif;
+    padding-top: 0rem;
+    
+}
+
+.slided{
+    animation: slider 5s  3s infinite;
+}
+.tabcontent:first-child{
+    display: block;
+}
+
+.tabcontent.active{
+    display: block;
+}
+.tabcontent{
+    display: none;
+}
+
+.tablink.active{
+    display: block;
+}
+
+.cur article span{
+    color: green;
+}
+p{
+    color: rgb(224, 220, 220);
+
+}
+h2{
+    color: aliceblue;
+}
+article{
+
+    background-color: rgb(45, 46, 48);
+}
+button:hover{
+    color: rgb(17, 146, 28);
+    font-size: 110%;
+    transition: 0.1s ease-in-out;
+}
+
+.beanime{
+    animation: changer 1s infinite ;
+    color: cyan;
+}
+.and{
+    animation: clink 2s  infinite ;
+}
+.bool{
+    border-left:3px rgb(22, 156, 22) dashed;  
+    border-top:3px rgb(22, 156, 22) dashed;  
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    margin-left: -2rem;
+    margin-top: 1rem;
+}
+.cursor{
+    position: fixed;
+    width: 1.5rem;
+    display: block;
+    margin-right:1.4rem ;
+    height: 1rem;
+    background-color: rgba(10, 240, 60, 0.5);
+    z-index: 999999999999;
+    transition: 0.1s, background-color 0.1s;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+
+
+}
+li{
+
+    margin: 4rem;
+    gap: 0.8rem;
+    display: flex;
+    position: relative;
+}
+
+.bar{
+    content: " ";
+    background-color: greenyellow;
+    height: 0.55rem;
+    border-radius: 13px;
+}
+
+li::before{
+width: 6rem;
+height: 6rem;
+content: '';
+margin-left: -5rem;
+border-radius: 50%;
+background-size: cover;
+background-repeat: no-repeat;
+z-index: 9999;
+border: 0.2rem solid rgb(84, 81, 81);
+
+}
+
+
+.comp img{
+    margin: 5px;
+    border-radius: 13px;
+}
+
+.proj img:hover{
+    width: 100%;
+}
+.proj:hover{
+    margin-top: -3vh;
+}
+
+
+@keyframes slider
+        {
+            0%{
+                transform: translate(0px,0px);
+                opacity: 1;
+            }
+            45%{
+                transform: translate(-100px,100px);
+                opacity: 0;
+            }
+            55%{
+                transform: translate(100px, -100px);
+                opacity: 0;
+
+            }
+            100%{
+                transform: translate(0px,0px);
+                opacity: 1;
+            }
+        }
+
+
+@media (max-width: 1024px) {
+    .gauche{
+        width: 30%;
+        overflow: hidden;
+        
+
+    }
+    .who{
+        height: 20vh;
+        overflow: hidden;
+        text-align: center;
+        
+    }
+    .who .fist{
+        width:90%;
+        height: 20vh;
+        
+    }
+    .tab button{
+        text-align: center;
+        overflow: hidden;
+        height: 40px;
+    }
+    .tab button span{
+        display: none;
+    }
+
+    .toAnime{
+        width: 82vw;
+
+    }
+    .tabcontent{
+        padding-left: -10vw;
+    }
+    .liar{
+        margin-left: 15vw;
+      
+    }
+    .log{
+        width: 140%;
+    }
+
+
+}
